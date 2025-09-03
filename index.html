@@ -1,214 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Koshur Bagh - Kashmiri Orchard</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-    }
-    .hero {
-      background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      height: 100vh;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      background-attachment: fixed;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      font-weight: bold;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
-    }
-    .section-title {
-      font-weight: bold;
-      margin-bottom: 1.5rem;
-    }
-    .feature-icon {
-      font-size: 2rem;
-      color: #28a745;
-    }
-    .footer {
-      background: #222;
-      color: #ddd;
-      padding: 2rem 0;
-    }
-    .footer a {
-      color: #28a745;
-      text-decoration: none;
-    }
-  </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koshur Bagh - Kashmiri Orchard</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: 'Segoe UI', sans-serif;
+      }
+      .hero {
+        background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1600&q=80')
+          center/cover no-repeat;
+        height: 100vh;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-attachment: fixed;
+      }
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+      }
+      .section-title {
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+      }
+      .feature-icon {
+        font-size: 2rem;
+        color: #28a745;
+      }
+      .footer {
+        background: #222;
+        color: #ddd;
+        padding: 2rem 0;
+      }
+      .footer a {
+        color: #28a745;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img
+            src="assets/images/logo.png"
+            alt="KoshurBagh Logo"
+            width="40"
+            height="40"
+            class="me-2"
+          />
+          <span class="fw-bold">KoshurBagh</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-success shadow">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#">Koshur Bagh</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <!-- Hero Section -->
+    <header class="hero">
+      <div>
+        <h1>Welcome to Koshur Bagh</h1>
+        <p class="lead">Empowering Kashmiri Farmers with Technology</p>
+        <a href="#about" class="btn btn-light btn-lg mt-3"
+          ><i class="fas fa-leaf"></i> Learn More</a
+        >
+      </div>
+    </header>
 
-<!-- Hero Section -->
-<header class="hero">
-  <div>
-    <h1>Welcome to Koshur Bagh</h1>
-    <p class="lead">Experience the beauty and taste of Kashmiri Orchards</p>
-    <a href="#about" class="btn btn-light btn-lg mt-3"><i class="fas fa-leaf"></i> Learn More</a>
-  </div>
-</header>
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="section-title text-center">About KoshurBagh</h2>
+        <p class="text-center">
+          KoshurBagh is an innovative agriculture platform dedicated to supporting farmers in
+          Kashmir. We aim to modernize orchard management, improve productivity, and provide easy
+          access to vital farming information.
+        </p>
 
-<!-- About Section -->
-<section id="about" class="py-5">
-  <div class="container">
-    <h2 class="section-title text-center">Welcome to KoshurBagh</h2>
-    <p class="text-muted text-center">
-      KoshurBagh is an innovative agriculture platform dedicated to supporting
-      farmers in Kashmir. We aim to modernize orchard management, improve
-      productivity, and provide easy access to vital farming information.
-    </p>
-
-    <div class="row mt-5">
-      <div class="col-md-6">
-        <h3>🌱 Our Mission</h3>
+        <h3 class="mt-4">Our Mission</h3>
         <p>
-          Our mission is to empower local Kashmiri farmers with technology to optimize
-          their orchards, track harvests, and make informed decisions that boost yield
-          and income.
+          Our mission is to empower local Kashmiri farmers with technology to optimize their
+          orchards, track harvests, and make informed decisions that boost yield and income.
+        </p>
+
+        <h3 class="mt-4">Why KoshurBagh?</h3>
+        <ul>
+          <li>
+            Organize your orchards with photos, fruit types (Apple, Walnut, etc.), and status
+            tracking.
+          </li>
+          <li>
+            Maintain harvest logs including date, quantity, notes, and optional images for better
+            record-keeping.
+          </li>
+          <li>Get real-time notifications about approvals, suggestions, and important updates.</li>
+          <li>
+            Personalized farmer dashboard with greetings and weather updates to plan daily tasks
+            efficiently.
+          </li>
+          <li>
+            Easy profile management including farmer name, contact details, and orchard information.
+          </li>
+        </ul>
+
+        <h3 class="mt-4">Our Vision</h3>
+        <p>
+          We envision a connected Kashmiri farming community where technology simplifies orchard
+          management and improves overall farm productivity, helping farmers focus on what they do
+          best—growing quality produce.
+        </p>
+
+        <h3 class="mt-4">Join Us</h3>
+        <p>
+          By joining KoshurBagh, you become part of a modern, efficient, and sustainable farming
+          ecosystem. Together, we can grow better orchards, record accurate harvests, and improve
+          livelihoods in Kashmir.
         </p>
       </div>
-      <div class="col-md-6">
-        <h3>🌍 Our Vision</h3>
-        <p>
-          We envision a connected Kashmiri farming community where technology
-          simplifies orchard management and improves overall farm productivity,
-          helping farmers focus on what they do best—growing quality produce.
-        </p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title text-center">Key Features</h2>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <i class="fas fa-apple-whole feature-icon"></i>
+            <h5 class="mt-3">Orchard Management</h5>
+            <p class="text-muted">Track orchards with fruit types, photos, and progress updates.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="fas fa-clipboard-list feature-icon"></i>
+            <h5 class="mt-3">Harvest Records</h5>
+            <p class="text-muted">Maintain logs of harvest dates, quantities, and prices.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="fas fa-bell feature-icon"></i>
+            <h5 class="mt-3">Real-time Alerts</h5>
+            <p class="text-muted">Get notified about approvals, updates, and reminders.</p>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="mt-5">
-      <h3>✨ Why KoshurBagh?</h3>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-          <i class="fas fa-tree text-success"></i>
-          Organize your orchards with photos, fruit types (Apple, Walnut, etc.), and
-          status tracking.
-        </li>
-        <li class="list-group-item">
-          <i class="fas fa-box text-success"></i>
-          Maintain harvest logs including date, quantity, notes, and optional images
-          for better record-keeping.
-        </li>
-        <li class="list-group-item">
-          <i class="fas fa-bell text-success"></i>
-          Get real-time notifications about approvals, suggestions, and important
-          updates.
-        </li>
-        <li class="list-group-item">
-          <i class="fas fa-cloud-sun text-success"></i>
-          Personalized farmer dashboard with greetings and weather updates to plan
-          daily tasks efficiently.
-        </li>
-        <li class="list-group-item">
-          <i class="fas fa-user text-success"></i>
-          Easy profile management including farmer name, contact details, and
-          orchard information.
-        </li>
-      </ul>
-    </div>
-
-    <div class="mt-5 text-center">
-      <h3>🤝 Join Us</h3>
-      <p>
-        By joining KoshurBagh, you become part of a modern, efficient, and
-        sustainable farming ecosystem. Together, we can grow better orchards, record
-        accurate harvests, and improve livelihoods in Kashmir.
-      </p>
-      <a href="#contact" class="btn btn-success mt-3">
-        <i class="fas fa-handshake"></i> Get Started Today
-      </a>
-    </div>
-  </div>
-</section>
-
-
-<!-- Features Section -->
-<section id="features" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="section-title text-center">Why Choose Us</h2>
-    <div class="row text-center">
-      <div class="col-md-4">
-        <i class="fas fa-apple-whole feature-icon"></i>
-        <h5 class="mt-3">Fresh Produce</h5>
-        <p class="text-muted">Handpicked fruits directly from Kashmiri orchards.</p>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container text-center">
+        <h2 class="section-title">Contact Us</h2>
+        <p class="mb-4">We’d love to hear from you. Reach out for any queries or collaborations.</p>
+        <a href="mailto:info@koshurbagh.com" class="btn btn-success"
+          ><i class="fas fa-envelope"></i> Email Us</a
+        >
       </div>
-      <div class="col-md-4">
-        <i class="fas fa-seedling feature-icon"></i>
-        <h5 class="mt-3">Organic & Natural</h5>
-        <p class="text-muted">No harmful chemicals, only natural farming.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <p>&copy; 2025 Koshur Bagh. All Rights Reserved.</p>
+        <div>
+          <a href="#"><i class="fab fa-facebook fa-lg me-3"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-lg me-3"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-lg me-3"></i></a>
+          <a href="account-deletion-request.html"
+            ><i class="fas fa-user-slash"></i> Account Deletion</a
+          >
+        </div>
       </div>
-      <div class="col-md-4">
-        <i class="fas fa-truck feature-icon"></i>
-        <h5 class="mt-3">Fast Delivery</h5>
-        <p class="text-muted">Fresh products delivered to your doorstep.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    </footer>
 
-<!-- Gallery Section -->
-<section id="gallery" class="py-5">
-  <div class="container">
-    <h2 class="section-title text-center">Gallery</h2>
-    <div class="row g-3">
-      <div class="col-md-4"><img src="https://source.unsplash.com/400x300/?apple,orchard" class="img-fluid rounded shadow"></div>
-      <div class="col-md-4"><img src="https://source.unsplash.com/400x300/?kashmir,fruits" class="img-fluid rounded shadow"></div>
-      <div class="col-md-4"><img src="https://source.unsplash.com/400x300/?walnut,tree" class="img-fluid rounded shadow"></div>
-    </div>
-  </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="py-5 bg-light">
-  <div class="container text-center">
-    <h2 class="section-title">Contact Us</h2>
-    <p class="mb-4">We’d love to hear from you. Reach out for any queries or collaborations.</p>
-    <a href="mailto:info@koshurbagh.com" class="btn btn-success"><i class="fas fa-envelope"></i> Email Us</a>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="footer text-center">
-  <div class="container">
-    <p>&copy; 2025 Koshur Bagh. All Rights Reserved.</p>
-    <div>
-      <a href="#"><i class="fab fa-facebook fa-lg me-3"></i></a>
-      <a href="#"><i class="fab fa-twitter fa-lg me-3"></i></a>
-      <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
-    </div>
-  </div>
-</footer>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
